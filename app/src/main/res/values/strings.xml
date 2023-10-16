@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">ListViewSample2</string>
+    <string name="dialog_title">注文確認</string>
+    <string name="dialog_"></string>
+    <string name=""></string>
+    <string name=""></string>
+    <string name=""></string>
+    <string name=""></string>
+    <string name=""></string>
+    <string name=""></string>
 </resources>
