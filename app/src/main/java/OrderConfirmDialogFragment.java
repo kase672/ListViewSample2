@@ -3,7 +3,7 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.annotation.Nullable;
 
 
-public class OrderConfirmDialogFragment extends DialogFragment {
+public class OrderConfirmDialogFragment extends DialogFragment implements DialogaFragment {
     @NonNull
     @Override
     public Dialog onCreateDialog(@Nullable Bundle savedInstanceState) {
@@ -22,10 +22,9 @@ public class OrderConfirmDialogFragment extends DialogFragment {
         AlertDialog dialog = builder.create();
         return dialog;
     }
-
     private class DialogButtonClickListener implements DialogInterface.OnClickListener {
         @Override
-        public void OnClick(DialogInterface dialog, int which) {
+        public void onClick(DialogInterface dialog, int which) {
             String msg ="";
 
             switch(which) {
@@ -48,4 +47,5 @@ public class OrderConfirmDialogFragment extends DialogFragment {
             Toast.makeText(getActivity(), msg, Toast.LENGTH_LONG).show();
         }
     }
+
 }
