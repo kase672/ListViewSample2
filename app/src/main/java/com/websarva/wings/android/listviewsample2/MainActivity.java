@@ -53,14 +53,11 @@ public class MainActivity extends AppCompatActivity {
     private class ListItemClickListener implements AdapterView.OnItemClickListener {
         @Override
         public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-            OrderConfirmDialogFragment dailogFragment = new OrderConfirmDialogFragment();
+            OrderConfirmDialogFragment dialogFragment = new OrderConfirmDialogFragment();
 
-            dailogFragment.show(getSupportFragmentManager(), "com.websarva.wings.android.listviewsample2.OrderConfirmDialogFragment");
+            dialogFragment.show(getSupportFragmentManager(), "OrderConfirmDialogFragment");
         }
 
-        @Override
-        public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
 
-        }
     }
 }
