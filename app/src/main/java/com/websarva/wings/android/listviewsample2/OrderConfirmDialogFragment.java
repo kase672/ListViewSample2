@@ -1,3 +1,5 @@
+package com.websarva.wings.android.listviewsample2;
+
 import androidx.fragment.app.DialogFragment;
 import androidx.appcompat.app.AlertDialog;
 import androidx.annotation.Nullable;

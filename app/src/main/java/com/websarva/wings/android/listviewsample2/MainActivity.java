@@ -3,6 +3,7 @@ package com.websarva.wings.android.listviewsample2;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Adapter;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -54,7 +55,12 @@ public class MainActivity extends AppCompatActivity {
         public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
             OrderConfirmDialogFragment dailogFragment = new OrderConfirmDialogFragment();
 
-            dailogFragment.show(getSupportFragmentManager(), "OrderConfirmDialogFragment")
+            dailogFragment.show(getSupportFragmentManager(), "com.websarva.wings.android.listviewsample2.OrderConfirmDialogFragment");
+        }
+
+        @Override
+        public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+
         }
     }
 }
